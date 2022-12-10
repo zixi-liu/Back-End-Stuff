@@ -5,10 +5,20 @@ Centralized (CVCS) vs Distributed (DVCS)
 - CVCS: server & client
 - DVCS: servers
 
-CI/CD:
+## CI/CD:
 - CI: automatically compile the project and run tests on every code change to ensure that the build remains stable and prevent regressions in functionality.
 - CD: automatically packages the application and prepares it for deployment. This helps avoid human error when packaging the application.
 
 Continuous Deployment:
 - automatically deploying to a test (also known as staging) environment first to validate the deployment package and software changes. Once validated, it can automatically deploy to the live (also known as production) environment for customers.
 
+## Staging vs. Production
+
+Staging
+- Testing: The types of testing covered will be Unit testing, Integration testing and performance testing. All except performance testing can also be carried out in production.
+- Migrations
+- Configuration changes
+
+Production
+- Downtime
+- Vulnerabilities
