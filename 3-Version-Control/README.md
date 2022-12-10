@@ -41,4 +41,15 @@ Git Workflow
   - `git pull` before making changing and pushing
   - `git push` compares a snapshot of your local repository with the remote one and only replaces the files that have been changed
 
+Resolving Conflicts (merging or rebasing)
+- `git status` 
+- `git log --merge` to see and compare the changes
+- `git diff` to see the change that is causing the conflict
+  - `git diff main {another branch}`
+  - `git diff HEAD {filename}`
+  - `git diff {commit ID} {commit ID}`
+- `git log --pretty=oneline`
+- `git blame`
+
+
 
