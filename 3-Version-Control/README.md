@@ -22,3 +22,23 @@ Staging
 Production
 - Downtime
 - Vulnerabilities
+
+## Git
+
+- Connect via HTTPS
+- Connect via SSH
+
+Git Workflow
+- working directory modified -> (git add) -> staged -> (git commit) -> committed -> (git push) -> remote repository -> (git fetch/checkout) -> working directory
+- good practice
+  - `git status` to check if any changes or commits are currently there
+  - `git add` prompting git and letting it know that I want to track this file
+  - `git restore --staged {filename}` to unstage the change
+  - `git push -u origin {local banch}` to push change to remote repository
+  - `git remote add {url}` connect to a remote repository
+  - `git checkout branch`
+  - `git status` or `git branch` to check which branch you are currently on
+  - `git pull` before making changing and pushing
+  - `git push` compares a snapshot of your local repository with the remote one and only replaces the files that have been changed
+
+
