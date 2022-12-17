@@ -30,3 +30,14 @@ Common HTTP Methods
 - Post
 - Put
 - Delete
+
+HTTP Request
+- Informational (100-199)
+- Sucessful (200-299)
+- Redirection (300-399)
+- Client (400-499)
+- Server (500-599)
+
+
+
+
