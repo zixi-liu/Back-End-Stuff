@@ -26,10 +26,10 @@ IP v4 vs. IP v6
 - User Datagram Protocol
 
 Common HTTP Methods
-- Get
-- Post
-- Put
-- Delete
+- Get: the client requests a resource on the web server.
+- Post: The client submits data to a resource on the web server.
+- Put: The client replaces a resource on the web server.
+- Delete: The client deletes a resource on the web server.
 
 HTTP Request
 - Informational (100-199)
@@ -37,6 +37,27 @@ HTTP Request
 - Redirection (300-399)
 - Client (400-499)
 - Server (500-599)
+
+HTTPS (Secured)
+
+## Framework and Libraries
+
+- Handle receiving HTTP requests
+
+**APIs**
+- Browser/Web API
+- DOM API
+- Geolocation API
+...
+
+RESTful API
+
+Sensor-based API
+
+- Use endpoints to specify how different resources can be accessed
+
+
+
 
 
 
