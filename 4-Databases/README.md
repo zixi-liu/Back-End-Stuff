@@ -11,4 +11,4 @@ In the relational model, every relation needs to meet three conditions. These th
 - Domain constraints 
 - Referential integrity constraints 
 
-
+**Database Normalizations**
