@@ -12,6 +12,8 @@
 
 - solving subproblems (i.e. recursion)
   - Divide and conquer - subproblems are independent
+     - Base Case
+     - Inductive Step
   - Greedy
   - Contraction
   - Dynamic programming
@@ -20,6 +22,7 @@
 
 ### What makes a good solution?
 
+Correct & low cost
 
 
 ### Dynamic Programming
