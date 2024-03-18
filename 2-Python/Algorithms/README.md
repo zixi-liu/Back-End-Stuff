@@ -1,3 +1,27 @@
+### Algorithm Techniques
+
+[PDF](https://www.cs.cmu.edu/afs/cs/academic/class/15210-s14/www/lectures/intro.pdf)
+
+#### Brute Force
+
+- start by identifying the structure of expected results and a way to assign values to them
+
+#### Reducing to another problem
+
+#### Inductive techniques
+
+- solving subproblems (i.e. recursion)
+  - Divide and conquer - subproblems are independent
+  - Greedy
+  - Contraction
+  - Dynamic programming
+
+#### Randomization
+
+### What makes a good solution?
+
+
+
 ### Dynamic Programming
 
 [PDF](https://www.cs.cmu.edu/afs/cs/academic/class/15210-s14/www/lectures/dp.pdf)
