@@ -24,6 +24,11 @@
 
 Correct & low cost
 
+### Backtracking
+
+Pruning in backtracking:
+- forward checking
+- backjumping
 
 ### Dynamic Programming
 
