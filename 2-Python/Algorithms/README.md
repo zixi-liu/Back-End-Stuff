@@ -24,11 +24,44 @@
 
 Correct & low cost
 
+### Math 
+**两数之和**
+- Brute Force O(n^2), O(1)
+- Two Pointers O(nlogn)
+- Hashmap O(n), O(n)
+
+**三数之和**
+- Two Pointers: 先对数组进行一次排序，一层循环固定一个元素，循环内部利用双指针找出剩下两个元素。O(n^2)
+
+**四数之和**
+- Brute Force& Backtrack, O(n^4), O(n^4)
+- Divide and Conquer, twoSum(a, threeSum(A))
+
+**四数之和II**
+- 使用mapper存储A和B两两相加的结果，O(n^2), O(n)
+
+**最接近的三数之和**
+- 用res存储三数之和，O(n^2)
+
+**最大子序列和**
+- Brute Force, O(n^2), O(1)
+- Divide and Conquer, O(nlogn), O(logn)
+- Dynamic Programming, O(n), O(1)
+- Prefix Sum, O(n), O(1)
+
+**最大数**
+- functools.cmp_to_key(), O(nlogn), O(n)
+
+**分数到小数**
+
+
 ### Backtracking
 
 Pruning in backtracking:
 - forward checking
 - backjumping
+
+  
 
 ### Dynamic Programming
 
