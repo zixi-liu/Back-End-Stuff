@@ -53,6 +53,46 @@ Correct & low cost
 - functools.cmp_to_key(), O(nlogn), O(n)
 
 **分数到小数**
+- divmod(remainder*10, abs(denominator), O(denominator), O(denominator)
+
+### DFS & BFS
+
+**Binary Tree Inorder Traversal**
+```
+def inorder(root):
+    if not root:
+        return []
+
+    inorder(root.left)
+    result.append(root.val)
+    inorder(root.right)
+    return result
+```
+**Binary Tree Preorder Traversal**
+```
+def preorder(root):
+    if not root:
+        return []
+
+    result.append(root.val)
+    preorder(root.left)
+    preorder(root.right)
+    return result
+```
+**Binary Tree Postorder Traversal**
+```
+def postorder(root):
+    if not root:
+        return []
+
+    postorder(root.left)
+    postorder(root.right)
+    result.append(root.val)
+    return result
+ ```
+   
+**路径总和**
+
 
 
 ### Backtracking
