@@ -55,6 +55,9 @@ Correct & low cost
 **分数到小数**
 - divmod(remainder*10, abs(denominator), O(denominator), O(denominator)
 
+**680. Valid Palindrome II**
+- isPalindrome(s, l, n) or isPalindrome(s, r ,n)
+
 ### DFS & BFS
 
 **104.Maximum Depth of Binary Tree**
