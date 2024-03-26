@@ -57,6 +57,38 @@ Correct & low cost
 
 ### DFS & BFS
 
+**104.Maximum Depth of Binary Tree**
+- DFS Recursive: max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1, O(n), O(n)
+- BFS: queue, O(n), O(n)
+
+**111.Minimum Depth of Binary Tree**
+- DFS Recursive: min(self.minDepth(root.left), self.minDepth(root.right)) + 1, O(n), O(n)
+- BFS: queue 使用队列保存每一层的所有节点，把队列里的所有节点依次出队列，当出队列的节点无子节点，立即返回当前层数（即为最小深度）, O(n), O(n)
+```
+if not root:
+            return 0
+        queue = [root]
+        depth = 1
+        while queue:
+            tmp = []
+            for node in queue:
+                if not node.left and not node.right:
+                    return depth
+                if node.left:
+                    tmp.append(node.left)
+                if node.right:
+                    tmp.append(node.right)
+            queue = tmp
+            depth+=1
+        return depth
+```
+
+**110. Balanced Binary Tree**
+- Recursive: 此树深度=max(左子树深度，右子树深度)+1， O(n), O(n)
+- Preorder Traversal先序遍历递归: 构造一个获取当前子树的深度的函数 depth(root) - max(self.depth(root.left), self.depth(root.right)) + 1 and isBalanced(root.left) and isBalanced(root.right), O(nlogn), O(n)
+
+
+
 **Binary Tree Inorder Traversal**
 ```
 def inorder(root):
@@ -91,8 +123,16 @@ def postorder(root):
     return result
  ```
    
-**路径总和**
+**[112.路径总和](https://leetcode.cn/problems/path-sum/solutions/319149/lu-jing-zong-he-de-si-chong-jie-fa-dfs-hui-su-bfs-/)**
+- DFS Recursive: return self.hasPathSum(root.left, targetSum) or self.hasPathSum(root.right, targetSum), O(n), O(logn) - O(n)
+- Backtracking
+- BFS: 使用队列保存遍历到每个节点时的路径和
+- Stack: 使用栈同时保存节点和到这个节点的路径和, O(n), O(n)
 
+**113. Path Sum II**
+- DFS Recursive: O(n), O(logn) - O(n)
+- BFS: queue.append((root, [], 0)) # [将要处理的节点，路径，路径和](https://leetcode.cn/problems/path-sum-ii/solutions/427787/tao-mo-ban-er-cha-shu-wen-ti-de-dfs-he-bfs-jie-fa-/)
+- [Backtracking](https://leetcode.cn/problems/path-sum-ii/solutions/2361655/113-lu-jing-zong-he-iihui-su-qing-xi-tu-al1bg/), O(n), O(n)
 
 
 ### Backtracking
