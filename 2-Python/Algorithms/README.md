@@ -55,8 +55,35 @@ Correct & low cost
 **分数到小数**
 - divmod(remainder*10, abs(denominator), O(denominator), O(denominator)
 
+**2.Add Two Numbers**
+
+
 **680. Valid Palindrome II**
 - isPalindrome(s, l, n) or isPalindrome(s, r ,n)
+
+### Binary Search
+**153.Find Minimum in Rotated Sorted Array**
+- nums[m] < nums[(m-1+n)%n] and nums[m]<nums[(m+1)%n]
+
+### Binary Trees
+
+**96. Validate Binary Search Tree**
+- Recursion: left < x < right and self.isValidBST(root.left, left, x) and self.isValidBST(root.right, x, right), O(n), O(n) 
+
+**100.Same Tree**
+- Recursion: p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right), O(n), O(n)
+
+**101.Symmetric Tree**
+- Recursion: p.val == q.val and isSameTree(p.left, q.right) and isSameTree(p.right, q.left), O(n), O(n)
+
+**103. Binary Tree Zig Zag Traversal**
+- if len(res) % 2 == 0: tmp.append(node.val) else: tmp.appendleft(node.val), O(n), O(n)
+  
+**110.Balanced Binary Tree**
+- Recursion: get_height(node) -> return -1 / return max(left_height, right_height) + 1, O(n), O(n)
+
+**199.Binary Tree Right Sided View**
+- Recursion: if depth == len(ans): ans.append(node.val), O(n), O(n)
 
 ### DFS & BFS
 
