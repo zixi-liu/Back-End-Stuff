@@ -171,7 +171,30 @@ Pruning in backtracking:
 - forward checking
 - backjumping
 
-  
+**78.Subsets**
+- O(n*2^n), O(n)
+
+**131.Palindrome Partitioning**
+- O(n*2^n), O(n)
+```
+        ans = []
+        path = []
+        n = len(s)
+
+        def dfs(i):
+            if i == n:
+                ans.append(path[:])
+                return
+            
+            for j in range(i, n):
+                t = s[i:j+1]
+                if t == t[::-1]:
+                    path.append(t)
+                    dfs(j+1)
+                    path.pop()
+        dfs(0)
+        return ans
+```
 
 ### Dynamic Programming
 
